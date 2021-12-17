@@ -1,20 +1,21 @@
-var firstName = "john"
+let firstName = "john"
 
-function getName(){
-    var firstName = "peter"
-    console.log("inside function",firstName)
-}
-
-getName()
-
-console.log("outside function", firstName)
+//let firstName = "joh"
+//the above will give an error cus we cannot
+//delcare let more than once, but it can however be
+//reinitialized
+firstName = "john reinitailised"
 
 if(true){
-    var firstName = "peter"
+    let firstName = "peter"
     console.log("inside function",firstName)
 }
 
 console.log("outside function", firstName)
-//as is very clear from the above examble, the
-//var keyword is only scobed in the function, therefore, it 
-//will be reinit anytime it is called with something else
+/**
+ * as seen clearly, using the 
+ * let keyword of es6 gives more of
+ * a more static tybed language becasuse
+ * the variables cannot be redcleared,also, with
+ * the let keyword, if blocked scobed
+ */
