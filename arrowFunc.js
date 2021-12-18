@@ -46,13 +46,23 @@ obj.getProduct()
 //get a load of this, called arguement binding
 //i really did not know this before
 function manyArgs(){
-    console.log(arguments)
+    //console.log(arguments)
 }
 manyArgs(3,2,4,5)
 manyArgs(4,34,2,23,4,55)
+
+
+
+
+
+
+
 /**
  * arrow functions come with default return statement, but only if
  * the function is one line long, if more than one line, parthen must be used.
  * 
  * arrow functions do not have their own "this", but inherit from their parent
+ * 
+ * so sad that arrow functions do not support arguments, something called reset operator
+ * are used
  */
