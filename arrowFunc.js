@@ -52,8 +52,31 @@ manyArgs(3,2,4,5)
 manyArgs(4,34,2,23,4,55)
 
 
+//so she said that arrow 
+//functions are mostly used for performing
+//stuff over and over again
+const names = ["sam", "daniel", "peter"] 
 
+const results = names.map(name => name.toUpperCase())
+//console.log(results)
 
+let objWitMet = {
+    firstName:"osamede",
+    lastName:"akonofua",
+    concatName:function(){
+        console.log(`${this.firstName} ${this.lastName}`)
+    },
+    concatNameAr:()=>{
+        console.log(`${this.firstName} ${this.lastName}`)
+        /**
+         * this will not work, because the arrow function
+         * does not have its own this keyword
+         */
+    },
+}
+
+objWitMet.concatName()
+objWitMet.concatNameAr()
 
 
 
