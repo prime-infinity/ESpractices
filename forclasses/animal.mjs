@@ -18,3 +18,17 @@ export class Animal {
     }
 
 }
+
+
+//normall, this below will be in its own
+//different folder
+export class Cat extends Animal{
+    /*constructor(type,legs,tail){
+        super(type,legs) //the suber inherits from the barent class
+
+    }*/
+
+    makeNoise(sound = 'Meow'){
+        console.log(sound);
+    } //this is method overriding
+}
